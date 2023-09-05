@@ -1,0 +1,34 @@
+.navigation-ui-content-wrapper {
+    max-width: 1200px;
+    padding: 80 0px;
+    margin: 0 auto
+}
+
+.navigation-ui-footer {
+    height: 100px;
+    font-size: 12px;
+    line-height: 100px;
+    color: #333;
+    text-align: center;
+    background: #fff;
+    border-top: 1px solid #ccc
+}
+
+.navigation-ui-footer a {
+    color: #333;
+    text-decoration: none
+}
+
+.navigation-ui-footer a:hover {
+    color: #333
+}
+
+.navigation-ui-footer-content {
+    display: inline-block;
+    line-height: normal;
+    vertical-align: middle
+}
+
+.navigation-ui-footer-content span::after {
+    content: " - "
+}

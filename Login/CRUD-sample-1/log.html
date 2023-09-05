@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="" href="css/style_login.css">
+    <link rel="stylesheet" type="" href="css/style_register.css">
+    <title>log</title>
+    <link rel="icon" type="" href="imgdata/key.ico">
+    <style>
+        li {
+            list-style-type: none;
+        }
+    </style>
+</head>
+
+<body style="background-color: rgb(194, 198, 244);">
+    <button id="but">log in</button>
+    <div id="id01" class="modal">
+        <form action="index.php" method="post">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <p align="center" class="modal-header-text">Login System <span id="close">&times;</span></p>
+                </div>
+                <div class="modal-text">
+                    <br><br>
+                    <div style="display: inline-block;margin-left: 270px;">
+                        <label>Server Info</label>
+                        <hr style="width:200px;color:black;height: 1px;background-color: black;">
+                    </div>
+                    <br>
+                    <div style="margin-top:20px;position:absolute;margin-left:300px;display: inline-block;">
+                        <label style="font-family:Arial;font-size:15px;">Address:</label>&nbsp&nbsp&nbsp&nbsp
+                        <select id="sel" name="sel">
+                        <option value="StartServer">Star Server</option> 
+                        </select>
+                    </div>
+                    <div style="display: inline-block;margin-left: 270px;margin-top:50px;">
+                        <label>User Account</label>
+                        <hr style="width:200px;color:black;height: 0.5px;background-color: black;">
+                    </div>
+                    <br>
+                    <div align="center" id="term">
+                        &nbsp&nbsp&nbsp&nbsp<label class="log-user" for="PSH">UserId:</label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                        <input class="style-input" type="text" placeholder="Enter UserId!" name="userid" required>
+                        <br><br>
+                        <label class="log-user" for="PSH">Username:</label>&nbsp&nbsp&nbsp
+                        <input class="style-input" type="text" placeholder="Enter Username!" name="name" required>
+                        <br><br>
+                        <label class="log-user" for="215">PassWord:</label>&nbsp&nbsp&nbsp
+                        <input class="style-password" type="password" placeholder="Enter Password!" name="password" required>
+                    </div>
+                    <div id="check" style="margin-left: 400px;position: absolute;">
+                        <input type="checkbox" name="check" value="check">
+                        <label for="">save account</label>
+                    </div>
+                    <br><br><br>
+                    <div id="but_login">
+                        <button class="butt-login" type="submit">Login</button>
+                        <button class="butt-re" id="but_re" type="button">Register</button>
+                    </div>
+                </div>
+                <div style="margin-top:-15px;display: block;position:absolute;">
+                    <img src="imgdata/net.PNG" alt="" style="width: 200px;height: 470px;margin-top: -470px;">
+                </div>
+            </div>
+        </form>
+    </div>
+    <!--register system start-->
+    <div id="id02" class="modal_re">
+        <form action="add.php" method="post">
+            <div class="modal-content-re">
+                <div class="modal-header-re">
+                    <p align="center" class="modal-header-text-re">register system<span id="close-re">&times;</span></p>
+                </div>
+                <div class="modal-text-re">
+
+                    <br>
+                    <ul id="term" style="display: block;">
+                        <!--<li id="gender">
+                            <br>
+                            <select style="width: 90px;margin-left: -10px;">
+                                <legend align="center">Select</legend>
+                                <div>
+                                    <input type="radio" id="woman" name="gender" value="qq" checked>
+                                    <label for="woman">woman</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="man" name="ma" value="ww" checked>
+                                    <label for="man">man</label>
+                                </div>
+
+
+                            </select>
+                        </li>-->
+                        <li id="UserId">
+                            <br> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                            <label class="log-user-re">userid</label>&nbsp&nbsp&nbsp<br>
+                            <input class="style-input-re" type="text" placeholder="Enter UserId!" name="userid" required>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                        </li>
+                        <li id="Username">
+                            <br> &nbsp&nbsp&nbsp&nbsp&nbsp
+                            <label class="log-user-re">username</label>&nbsp&nbsp&nbsp<br>
+                            <input class="style-input-re" type="text" placeholder="Enter Username!" name="username" required>
+                        </li>
+                        <li id="nationality">
+                            <br> &nbsp&nbsp&nbsp&nbsp&nbsp
+                            <label class="log-user-re">nationality</label>&nbsp&nbsp&nbsp<br>
+                            <input class="style-input-re" list="country" name="country" id="coun">
+                            <datalist id="country">
+                                <option value="United States">
+                                <option value="Russia">
+                                <option value="China">
+                                <option value="Argentina">
+                                <option value="India">
+                                <option value="Germany">
+                                <option value="Spain">
+                                <option value="Turkey">
+                            </datalist>
+                        </li>
+                        <li id="Password">
+                            <br>&nbsp&nbsp&nbsp&nbsp&nbsp
+                            <label class="log-user-re">passWord</label><br>
+                            <input class="style-password-re" type="password" placeholder="Enter Password!" name="password" required>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                        </li>
+                        <li id="Password Confirm">
+                            <br>
+                            <label class="log-user-re">passWord confirm</label><br>
+                            <input class="style-password-re" type="password" placeholder="Enter Password Confirm!" name="password confirm" required>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                        </li>
+                        <li id="Birthday" style="margin-right: 20px;">
+                            <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                            <label class="log-user-re">birthday</label><br>
+                            <input class="style-input-re" type="date" min="1992-01-01" max="2003-12-31" placeholder="" name="birthday" required>
+                        </li>
+                    </ul>
+                    <div style="margin-top: -430px; margin-left: -100px;">
+                        <input class="butt-re-2" type="reset" value="reset">
+                        <button class="butt-re-2" type="submit">Register</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+    </div>
+    <!--register system end-->
+    <script src="js/login.js"></script>
+</body>
+
+</html>

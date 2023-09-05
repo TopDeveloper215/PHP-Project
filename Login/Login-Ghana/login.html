@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="" href="css/style_login.css">
+    <!-- <link rel="stylesheet" type="" href="css/style_register.css"> -->
+    <title>log</title>
+    <link rel="icon" type="" href="imgdata/key.ico">
+    <style>
+        li {
+            list-style-type: none;
+        }
+    </style>
+</head>
+
+<body style="background-color: rgb(194, 198, 244);">
+    <button id="but">log in</button>
+    <div id="id01" class="modal">
+        <form action="client.html" method="post">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <p align="center" class="modal-header-text">Login System <span id="close">&times;</span></p>
+                </div>
+                <div class="modal-text">
+                    <br><br>
+                    <div align="center" id="term">
+                        <label class="log-user" for="econnn">Username:</label>&nbsp&nbsp&nbsp
+                        <input class="style-input" type="text" placeholder="Enter Username!" name="econnn" required>
+                        <br><br>
+                        <label class="log-user" for="nISwZKmjfP">PassWord:</label>&nbsp&nbsp&nbsp
+                        <input class="style-password" type="password" placeholder="Enter Password!" name="nISwZKmjfP" required>
+                    </div>
+                    <br><br><br>
+                    <div>
+                        <button class="butt-login" type="submit">Login</button>
+                        <button class="butt-re" id="but_re" type="button">Register</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!--register system start-->
+    <div id="id02" class="modal_re">
+        <form action="add.php" method="post">
+            <div class="modal-content-re">
+                <div class="modal-header-re">
+                    <p align="center" class="modal-header-text">Register System <span id="close-re">&times;</span></p>
+                </div>
+                <div class="modal-text">
+                    <br><br>
+                    <div align="center" id="term">
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<label class="log-user" for="econnn">Username:</label>&nbsp&nbsp&nbsp
+                        <input class="style-input" type="text" placeholder="Enter Username!" name="econnn" required>
+                        <br><br>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<label class="log-user" for="nISwZKmjfP">PassWord:</label>&nbsp&nbsp&nbsp
+                        <input class="style-password" type="password" placeholder="Enter Password!" name="nISwZKmjfP" required>
+                        <br><br>
+                        <label class="log-user"  for="nISwZKmjfP">PassWord Confirm:</label>&nbsp&nbsp&nbsp
+                        <input class="style-password" type="password" placeholder="Enter Password!" name="nISwZKmjfP" required>
+                    </div>
+                    <br><br><br>
+                    <div >
+                        <button class="butt-re-2" type="submit">Register</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!--register system end-->
+    <script src="js/login.js"></script>
+</body>
+
+</html>

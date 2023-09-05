@@ -1,0 +1,59 @@
+
+.title-main {
+    font-size: 20px;
+    line-height: 26px;
+    margin-top: -5px;
+    margin-bottom: 24px;
+    position: relative;
+    zoom: 1;
+    display: block;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+.paragraph {
+    position: relative;
+    zoom: 1;
+    clear: left;
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: -4px;
+    margin-bottom: 16px;
+}
+.paragraph:after {
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+    content: ".";
+    overflow: hidden;
+    zoom: 1;
+}
+.title-secondary {
+    font-size: 18px;
+    line-height: 22px;
+}
+input{
+    border-radius: 4px;
+    position: relative;
+    border: 1px solid #999;
+    margin: 6px 0px;
+    padding: 0px 6px;
+    height: 28px;
+    width: 100%;
+    font-size: 14px;
+    background-color: rgb(232, 240, 254);
+}
+button{
+    color: #000;
+    
+    display: inline-block;
+    padding: 5px 14px;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    white-space: nowrap;
+    border-radius: 4px;
+    border: 1px solid;
+}
